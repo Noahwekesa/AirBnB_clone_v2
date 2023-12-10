@@ -17,9 +17,6 @@ echo "<html><head></head><body>Test Page</body></html>" | sudo tee /data/web_sta
 # create a symbolix link
 sudo ln -sf /data/web_static/releases/test/ data/web_static/current
 
-# set ownership
-sudo chown -R ubuntu:ubunyu /data
-
 # update nginix configuration
 config_path="/etc/nginx/sites-available/default"
 sudo sed -i '/location \/hbnb_static/ {s/\# alias/alias/}' "$config_path"
