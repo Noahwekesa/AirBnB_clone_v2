@@ -38,11 +38,15 @@ def display_number_template(n):
 
 
 @app.route('/number_odd_or_even/<n>')
-def display_odd_or_even(n):
+def display_number_odd_or_even(n):
     if n.isdigit():
-        return render_template('number_odd_or_even.html', n=int(n), result=is_even_odd(int(n)))
+        return render_template('6-number_odd_or_even.html', n=int(n), result=is_even_odd(int(n)))
     else:
         return ""
+
+
+def is_even_odd(num):
+    return "even" if num % 2 == 0 else "odd"
 
 
 if __name__ == "__main__":
