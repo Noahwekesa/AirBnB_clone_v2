@@ -6,7 +6,7 @@ for file in *.py; do
 			chmod +x "$file"
 			echo "Made $file executable."
 		else
-			echo "$file is already executable."
+			echo ""
 		fi
 	fi
 done
