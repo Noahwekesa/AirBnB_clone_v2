@@ -36,7 +36,7 @@ def python_cool(text):
     """
     Return the default value of text is "is cool"
     """
-    return "python {}".format(text.replace("_", " "))
+    return "Python {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
